@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ddd"
+    android:id="@+id/room_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:weightSum="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <EditText
+            android:id="@+id/edRoomName"
+            android:hint="방 이름"
+            android:textSize="20dp"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="방 추가"
+            android:id="@+id/btnRoomAdd"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:background="#ff0"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:listSelector="@drawable/list_selector"
+        android:id="@+id/listRoom"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+1. 안드로이드 패키지명은 com.exam.testapplication으로.
+
